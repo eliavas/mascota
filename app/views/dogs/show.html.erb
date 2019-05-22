@@ -1,0 +1,10 @@
+<h1>Dogs#show</h1>
+<p>Find me in app/views/dogs/show.html.erb</p>
+<h1><%=@dog.name %></h1>
+<h4><%=@dog.moto %></h4>
+<h3>Create a Dog</h3>
+<%=form_with model:@dog do |form|%>
+<%= form.text_field : name,placeholder: "name"%>
+<%= form.text_field : motto,placeholder: "motto"%>
+<%=form.submit%>
+<%end%>
